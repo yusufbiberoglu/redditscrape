@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New RedditPost{% endblock %}
+
+{% block body %}
+    <h1>Create new RedditPost</h1>
+
+    {{ include('reddit_post/_form.html.twig') }}
+
+    <a href="{{ path('reddit_post_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit RedditPost{% endblock %}
+
+{% block body %}
+    <h1>Edit RedditPost</h1>
+
+    {{ include('reddit_post/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('reddit_post_index') }}">back to list</a>
+
+    {{ include('reddit_post/_delete_form.html.twig') }}
+{% endblock %}
